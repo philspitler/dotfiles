@@ -1,0 +1,11 @@
+:set guifont=DejaVu\ Sans\ Mono\ 8.59961
+:set nobackup
+:nmap <C-S-tab> :tabprevious<cr>
+:nmap <C-tab> :tabnext<cr>
+:map <C-S-tab> :tabprevious<cr>
+:map <C-tab> :tabnext<cr>
+:imap <C-S-tab> <ESC>:tabprevious<cr>i
+:imap <C-tab> <ESC>:tabnext<cr>i
+:nmap <silent> <C-N> :silent noh<CR>
+:map <F2> :NERDTreeToggle<CR>
+:map <F3> :NERDTreeMirror<CR>
