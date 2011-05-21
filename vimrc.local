@@ -1,5 +1,6 @@
 :set guifont=DejaVu\ Sans\ Mono\ 8.59961
 :set nobackup
+:nmap <C-t> :tabnew<cr>
 :nmap <C-S-tab> :tabprevious<cr>
 :nmap <C-tab> :tabnext<cr>
 :map <C-S-tab> :tabprevious<cr>
