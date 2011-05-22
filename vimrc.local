@@ -10,3 +10,12 @@
 :nmap <silent> <C-N> :silent noh<CR>
 :map <F2> :NERDTreeToggle<CR>
 :map <F3> :NERDTreeMirror<CR>
+
+"CUT
+:map <A-x> "+x
+
+"COPY
+:map <A-c> "+y
+
+"PASTE
+:map <A-v> "+gP
