@@ -45,7 +45,7 @@ alias stash='git stash'
 alias gvim="gvim -p --remote-tab-silent"
   
 #colors
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
