@@ -1,7 +1,7 @@
 [github]
   user = philspitler
 [core]
-  excludesfile = /home/pspitler/.gitignore
+  excludesfile = /Users/Phil/.gitignore
 [user]
   name = Phil Spitler
   email = pspitler@gmail.com
