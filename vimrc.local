@@ -19,3 +19,7 @@
 
 "PASTE
 :map <A-v> "+gP
+
+:set wrap
+
+au BufNewFile,BufRead *.less set filetype=less
