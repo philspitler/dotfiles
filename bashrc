@@ -10,9 +10,9 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 #export NODE_PATH="/usr/local/lib/node"
 
 # editors
-export GIT_EDITOR="gvim"
-export SVN_EDITOR="gvim"
-export EDITOR="gvim"
+export GIT_EDITOR="mvim"
+export SVN_EDITOR="mvim"
+export EDITOR="mvim"
 
 # enable color support
 export CLICOLOR=1
