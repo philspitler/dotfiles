@@ -29,3 +29,4 @@ autocmd BufRead,BufNewFile *.test set filetype=php
 autocmd BufRead,BufNewFile *.inc set filetype=php
 autocmd BufRead,BufNewFile *.profile set filetype=php
 autocmd BufRead,BufNewFile *.view set filetype=php
+autocmd BufRead,BufNewFile *.ejs set filetype=html
