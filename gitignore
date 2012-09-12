@@ -19,5 +19,8 @@ build/*
 *.pbxuser
 *.mode1v3
 
+#sublime text
+*.sublime-projectcompletions
+
 data/*
 *.swp
