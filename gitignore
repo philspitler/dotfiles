@@ -24,3 +24,5 @@ build/*
 
 data/*
 *.swp
+
+CVS/

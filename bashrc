@@ -16,6 +16,9 @@ export GIT_EDITOR="mvim"
 export SVN_EDITOR="mvim"
 export EDITOR="mvim"
 
+# cvsroot
+export CVSROOT=:pserver:pspitler@terrapin:9401/export/home/tkicvs
+
 # enable color support
 export CLICOLOR=1
 if [ -x /usr/bin/dircolors ]; then
