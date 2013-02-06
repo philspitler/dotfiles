@@ -9,6 +9,7 @@ profile
 .rake_t_cache
 .rvmrc
 .bundle/
+.powrc
 
 # windows
 Thumbs.db
@@ -26,3 +27,5 @@ data/*
 *.swp
 
 CVS/
+
+.sass-cache

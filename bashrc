@@ -8,6 +8,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="/android-sdk/tools:$PATH"
 export PATH="/Applications/MAMP/bin/php/php5.4.4/bin:/Applications/MAMP/Library/bin:/Volumes/Data/Users/pspitler/Library/drush:$PATH"
+export PATH="/usr/local/Cellar/curl/7.25.0/bin:$PATH"
 
 #export NODE_PATH="/usr/local/lib/node"
 
