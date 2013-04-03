@@ -8,6 +8,8 @@ profile
 .svn
 .rake_t_cache
 .rvmrc
+.ruby-version
+.ruby-gemset
 .bundle/
 .powrc
 

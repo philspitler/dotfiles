@@ -18,7 +18,10 @@ export SVN_EDITOR="mvim"
 export EDITOR="mvim"
 
 # cvsroot
-export CVSROOT=:pserver:pspitler@terrapin:9401/export/home/tkicvs
+export CVSROOT=:pserver:pspitler@localhost:2401/export/home/tkicvs
+
+# setup SSH tunnel to CVS
+#ssh -f pspitler@cooperstown -L 2401:cooperstown:2401 -N
 
 # enable color support
 export CLICOLOR=1
