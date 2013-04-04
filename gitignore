@@ -10,7 +10,7 @@ profile
 .rvmrc
 .ruby-version
 .ruby-gemset
-.bundle/
+.bundle
 .powrc
 
 # windows
