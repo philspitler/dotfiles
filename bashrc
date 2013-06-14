@@ -13,9 +13,9 @@ export PATH="/usr/local/Cellar/curl/7.25.0/bin:$PATH"
 #export NODE_PATH="/usr/local/lib/node"
 
 # editors
-export GIT_EDITOR="mvim"
-export SVN_EDITOR="mvim"
-export EDITOR="mvim"
+export GIT_EDITOR="subl -w"
+export SVN_EDITOR="subl -w"
+export EDITOR="subl -w"
 
 # cvsroot
 export CVSROOT=:pserver:pspitler@localhost:2401/export/home/tkicvs
