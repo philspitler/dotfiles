@@ -20,7 +20,7 @@ build/*
 *.mode1v3
 
 #sublime text
-*.sublime-projectcompletions
+*.sublime-*
 
 data/*
 *.swp
