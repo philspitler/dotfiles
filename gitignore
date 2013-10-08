@@ -28,3 +28,7 @@ data/*
 CVS/
 
 .sass-cache
+
+.vagrant/*
+Vagrantfile
+nohup.out

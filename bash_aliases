@@ -55,3 +55,10 @@ alias egrep='egrep --color=auto'
 
 # osx
 alias dockspace="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}' && killall Dock"
+
+# sublime text
+alias proj="subl --project `basename pwd`.sublime-project"
+
+# mongodb from homebrew for osx
+alias mongo.server.start='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist'
+alias mongo.server.stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist'
