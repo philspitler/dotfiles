@@ -99,27 +99,6 @@ function __present_git_branch {
   [ "$branch" != "" ] && echo "[$branch$dirty]"
 }
 
-# rvm
-
-function __my_rvm_ruby_version {
-  local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
-  [ "$gemset" != "" ] && gemset="@$gemset"
-  local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
-  local ruby_type=$(echo $RUBY_VERSION | awk -F'-' '{print $1}')
-  local full="$ruby_type($version$gemset)"
-  [ "$full" != "" ] && echo "$full "
-}
-
-function gemdir {
-  if [[ -z "$1" ]] ; then
-    cd `rvm gemdir`
-    pwd
-  else
-    rvm "$1"
-    cd `rvm gemdir`
-    pwd
-  fi
-}
 
 # prompt
 bash_prompt() {
@@ -157,8 +136,5 @@ bash_prompt() {
 
   local UC=$W # user's color
   [ $UID -eq "0" ] && UC=$R # root's color
-
-  # PS1="$Y\$(__my_rvm_ruby_version)$W[$W\u@$C\h$W:$G\w$EMM\$(__git_branch)$EMR\$(__git_dirty)${NONE}]$ "
-  # PS1="$W\$(__my_rvm_ruby_version)$G\h:$C\w $W[\$(__git_branch)\$(__git_dirty)]${NONE}$ "
-  PS1="$Y\$(__my_rvm_ruby_version)$G\h:$C\w $W\$(__present_git_branch)${NONE}$ "
+PS1="$Y\$G\h:$C\w $W\$(__present_git_branch)${NONE}$ "
 }

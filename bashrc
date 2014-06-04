@@ -13,12 +13,9 @@ export PATH="/usr/local/Cellar/curl/7.25.0/bin:$PATH"
 #export NODE_PATH="/usr/local/lib/node"
 
 # editors
-export GIT_EDITOR="subl -w"
-export SVN_EDITOR="subl -w"
-export EDITOR="subl -w"
-
-# cvsroot
-export CVSROOT=:pserver:pspitler@localhost:2401/export/home/tkicvs
+export GIT_EDITOR="vim"
+export SVN_EDITOR="vim"
+export EDITOR="vim"
 
 # setup SSH tunnel to CVS
 #ssh -f pspitler@cooperstown -L 2401:cooperstown:2401 -N
@@ -33,10 +30,6 @@ fi
 if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases ; fi
 if [ -f ~/.bash_functions ]; then . ~/.bash_functions ; fi
 
-# rvm
-if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
-if [ -d ~/.rvm/bin ] ; then export PATH=$PATH:~/.rvm/bin ; fi
-if [ -r ~/.rvm/scripts/completion ] ; then source ~/.rvm/scripts/completion ; fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -52,4 +45,3 @@ fi
 bash_prompt
 unset bash_prompt
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
