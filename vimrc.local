@@ -20,8 +20,6 @@
 "PASTE
 :map <A-v> "+gP
 
-:set wrap
-
 au BufNewFile,BufRead *.less set filetype=less
 autocmd BufRead,BufNewFile *.module set filetype=php
 autocmd BufRead,BufNewFile *.install set filetype=php
@@ -30,3 +28,12 @@ autocmd BufRead,BufNewFile *.inc set filetype=php
 autocmd BufRead,BufNewFile *.profile set filetype=php
 autocmd BufRead,BufNewFile *.view set filetype=php
 autocmd BufRead,BufNewFile *.ejs set filetype=html
+
+:set tabstop=2
+:set shiftwidth=2
+:set expandtab
+:set wrap
+
+let g:nerdtree_tabs_open_on_console_startup=1
+:command Thtml :%!tidy -q -i --show-errors 0
+
