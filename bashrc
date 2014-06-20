@@ -30,6 +30,9 @@ fi
 if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases ; fi
 if [ -f ~/.bash_functions ]; then . ~/.bash_functions ; fi
 
+# history
+export HISTTIMEFORMAT='%F %T '
+export HISTSIZE=2000
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -45,3 +48,9 @@ fi
 bash_prompt
 unset bash_prompt
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+
+RUBIES+=(~/.rbenv/versions/*)
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
