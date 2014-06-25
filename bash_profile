@@ -4,6 +4,4 @@ if [ -f ~/.profile ]; then source ~/.profile ; fi
 
 [[ -s /Users/pspitler/.nvm/nvm.sh ]] && . /Users/pspitler/.nvm/nvm.sh # This loads NVM
 
-eval "$(rbenv init -)"
-
-export PATH="./.bundle/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
