@@ -33,3 +33,6 @@ CVS/
 .vagrant/*
 Vagrantfile
 nohup.out
+
+#binstubs
+bin
