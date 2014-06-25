@@ -48,8 +48,6 @@ fi
 bash_prompt
 unset bash_prompt
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-
 RUBIES+=(~/.rbenv/versions/*)
 
 ### Added by the Heroku Toolbelt
