@@ -34,6 +34,6 @@ autocmd BufRead,BufNewFile *.ejs set filetype=html
 :set expandtab
 :set wrap
 
-let g:nerdtree_tabs_open_on_console_startup=1
+"let g:nerdtree_tabs_open_on_console_startup=1
 :command Thtml :%!tidy -q -i --show-errors 0
 
