@@ -74,4 +74,9 @@ export PATH="/Users/pspitler/.nvm/v0.10.26/bin:/usr/local/heroku/bin:/usr/local/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
+
+# mcg
+if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
+
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
