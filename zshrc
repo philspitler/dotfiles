@@ -5,7 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -48,14 +49,16 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras rails ruby bundler pow tmux brew osx rbenv nvm npm node pow powify vagrant aws bower brew gem heroku pip docker)
+plugins=(git git-extras rails ruby bundler pow tmux brew osx rbenv npm node pow powify vagrant bower brew gem heroku pip docker)
 alias ctags="`brew --prefix`/bin/ctags"
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/pspitler/.nvm/v0.10.26/bin:/usr/local/heroku/bin:/usr/local/Cellar/curl/7.25.0/bin:/Applications/MAMP/bin/php/php5.4.4/bin:/Applications/MAMP/Library/bin:/Volumes/Data/Users/pspitler/Library/drush:/android-sdk/tools:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="./bin:$PATH"
+export EDITOR="vim"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -75,8 +78,17 @@ export PATH="/Users/pspitler/.nvm/v0.10.26/bin:/usr/local/heroku/bin:/usr/local/
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
 
+alias mongod='mongod --dbpath=/usr/local/var/mongodb'
+
 # mcg
 if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 
 # rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# NODE_ENV
+export NODE_ENV="development"
+
+# eb (Elastic Beanstalk)
+export PATH="$HOME/opt/AWS-ElasticBeanstalk-CLI-2.6.3/eb/macosx/python2.7:$PATH"

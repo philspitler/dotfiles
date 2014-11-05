@@ -3,8 +3,8 @@
 [core]
   excludesfile = ~/.gitignore
 [user]
-  name = Phil Spitler
-  email = pspitler@gmail.com
+	name = Phil Spitler (PRS)
+	email = prs@sproutkey.com
 [alias]
   st = status
   ci = commit
