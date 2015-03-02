@@ -35,4 +35,4 @@ Vagrantfile
 nohup.out
 
 #binstubs
-bin
+#bin

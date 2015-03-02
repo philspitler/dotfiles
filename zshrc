@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras rails ruby bundler pow tmux brew osx rbenv npm node pow powify vagrant bower brew gem heroku pip docker)
+plugins=(git git-extras rails ruby bundler pow tmux brew osx rbenv npm node pow powify vagrant bower brew gem heroku)
 alias ctags="`brew --prefix`/bin/ctags"
 
 source $ZSH/oh-my-zsh.sh
