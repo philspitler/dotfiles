@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras rails ruby bundler pow tmux brew osx rbenv npm node pow powify vagrant bower brew gem heroku)
+plugins=(git git-extras ruby gem brew osx npm)
 alias ctags="`brew --prefix`/bin/ctags"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,11 +84,12 @@ alias mongod='mongod --dbpath=/usr/local/var/mongodb'
 if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # NODE_ENV
-export NODE_ENV="development"
+#export NODE_ENV="development"
 
-# eb (Elastic Beanstalk)
-export PATH="$HOME/opt/AWS-ElasticBeanstalk-CLI-2.6.3/eb/macosx/python2.7:$PATH"
+# NVM
+export NVM_DIR="/Volumes/home/pspitler/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
