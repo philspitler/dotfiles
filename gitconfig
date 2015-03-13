@@ -4,7 +4,7 @@
   excludesfile = ~/.gitignore
 [user]
 	name = Phil Spitler (PRS)
-	email = prs@sproutkey.com
+	email = phil@bloc.io
 [alias]
   st = status
   ci = commit
