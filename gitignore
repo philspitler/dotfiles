@@ -27,10 +27,6 @@ build/*
 .viminfo
 *.tmproj
 
-# vagrant
-.vagrant/*
-Vagrantfile
-
 # other
 *.log
 .powrc
