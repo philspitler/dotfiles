@@ -2,14 +2,15 @@
 **/__MACOSX/*.*
 .DS_Store
 profile
-*~
-.viminfo
-*.tmproj
-*.log
+
+# vcs
 .svn
+CVS/
+
+# ruby stuff
 .rake_t_cache
 .bundle
-.powrc
+.sass-cache
 
 # windows
 Thumbs.db
@@ -20,19 +21,19 @@ build/*
 *.pbxuser
 *.mode1v3
 
-#sublime text
+# editors
 *.sublime-*
-
-data/*
 *.swp
+.viminfo
+*.tmproj
 
-CVS/
-
-.sass-cache
-
+# vagrant
 .vagrant/*
 Vagrantfile
-nohup.out
 
-#binstubs
-#bin
+# other
+*.log
+.powrc
+nohup.out
+data/*
+*~

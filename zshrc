@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras ruby gem brew osx npm)
+plugins=(git git-extras ruby gem brew osx npm chruby postgres redis-cli)
 alias ctags="`brew --prefix`/bin/ctags"
 
 source $ZSH/oh-my-zsh.sh
@@ -93,3 +93,9 @@ if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 # NVM
 export NVM_DIR="/Volumes/home/pspitler/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### chruby
+chruby ruby-2.1.2
