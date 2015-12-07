@@ -57,8 +57,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="./bin:$PATH"
-export EDITOR="vim"
+export PATH="/Volumes/home/pspitler/Projects/railsnew/bin:$PATH"
+export EDITOR="atom"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -80,6 +80,8 @@ export EDITOR="vim"
 
 alias mongod='mongod --dbpath=/usr/local/var/mongodb'
 
+alias blog="rake post TITLE='$1'"
+
 # mcg
 if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 
@@ -99,3 +101,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### chruby
 chruby ruby-2.1.2
+
+### gem_home
+source /usr/local/share/gem_home/gem_home.sh
+export PATH="./bin:$PATH"
+
+export PATH="/Volumes/home/pspitler/Projects/bloc/phil/Bloc/node_modules/.bin:$PATH"
+
+source /Volumes/home/pspitler/.security
