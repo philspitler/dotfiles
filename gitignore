@@ -11,6 +11,10 @@ CVS/
 .rake_t_cache
 .bundle
 .sass-cache
+.gem
+
+# rails stuff
+./db/schema.rb
 
 # windows
 Thumbs.db
@@ -34,3 +38,9 @@ build/*
 nohup.out
 data/*
 *~
+dump.rdb
+
+node_modules
+
+assets/music
+dist/

@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="avit"
+#ZSH_THEME="avit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/Volumes/home/pspitler/Projects/railsnew/bin:$PATH"
+# export PATH="/Users/pspitler/Projects/railsnew/bin:$PATH"
 export EDITOR="atom"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -93,19 +93,18 @@ if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 #export NODE_ENV="development"
 
 # NVM
-export NVM_DIR="/Volumes/home/pspitler/.nvm"
+export NVM_DIR="/Users/pspitler/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### chruby
-chruby ruby-2.1.2
+chruby ruby-2.3.0
+
+#export PATH="/Users/pspitler/Projects/bloc/Bloc/node_modules/.bin:$PATH"
+
+source /Users/pspitler/.security
 
 ### gem_home
 source /usr/local/share/gem_home/gem_home.sh
-export PATH="./bin:$PATH"
-
-export PATH="/Volumes/home/pspitler/Projects/bloc/phil/Bloc/node_modules/.bin:$PATH"
-
-source /Volumes/home/pspitler/.security
