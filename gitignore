@@ -15,6 +15,7 @@ CVS/
 
 # rails stuff
 ./db/schema.rb
+./db/structure.sql
 
 # windows
 Thumbs.db
@@ -40,7 +41,17 @@ data/*
 *~
 dump.rdb
 
-node_modules
+#node_modules
+migrate.js
 
 assets/music
-dist/
+public/uploads
+
+# docker
+Dockerfile
+docker-compose.yml
+
+#heroku
+.env
+Procfile.nginx
+

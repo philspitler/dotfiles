@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="avit"
+ZSH_THEME="avit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export PATH="/Users/pspitler/Projects/railsnew/bin:$PATH"
-export EDITOR="atom"
+export EDITOR="code"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -90,7 +90,7 @@ if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 #eval "$(rbenv init -)"
 
 # NODE_ENV
-#export NODE_ENV="development"
+export NODE_ENV="development"
 
 # NVM
 export NVM_DIR="/Users/pspitler/.nvm"
@@ -100,7 +100,7 @@ export NVM_DIR="/Users/pspitler/.nvm"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### chruby
-chruby ruby-2.3.0
+#chruby ruby-2.3.1
 
 #export PATH="/Users/pspitler/Projects/bloc/Bloc/node_modules/.bin:$PATH"
 
@@ -108,3 +108,18 @@ source /Users/pspitler/.security
 
 ### gem_home
 source /usr/local/share/gem_home/gem_home.sh
+
+export PATH="/Users/pspitler/Library/Python/3.6/bin:$PATH"
+
+export PATH="/Users/pspitler/bin:$PATH"
+
+export PATH="$PATH:/Applications/OpenOffice.app/Contents/MacOS"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+export PATH="$HOME/.yarn/bin:$PATH"
