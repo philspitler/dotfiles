@@ -1,4 +1,4 @@
-# osx
+
 **/__MACOSX/*.*
 .DS_Store
 profile
@@ -47,11 +47,9 @@ migrate.js
 assets/music
 public/uploads
 
-# docker
-Dockerfile
-docker-compose.yml
-
 #heroku
 .env
 Procfile.nginx
 
+# docker
+docker-compose.yml

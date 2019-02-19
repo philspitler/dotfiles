@@ -107,7 +107,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source /Users/pspitler/.security
 
 ### gem_home
-source /usr/local/share/gem_home/gem_home.sh
+#source /usr/local/share/gem_home/gem_home.sh
 
 export PATH="/Users/pspitler/Library/Python/3.6/bin:$PATH"
 
@@ -123,3 +123,6 @@ export PATH="$PATH:/Applications/OpenOffice.app/Contents/MacOS"
 [[ -f /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/pspitler/.nvm/versions/node/v8.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
 export PATH="$HOME/.yarn/bin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/Users/pspitler/Library/Python/2.7/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
