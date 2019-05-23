@@ -93,8 +93,9 @@ if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 export NODE_ENV="development"
 
 # NVM
-export NVM_DIR="/Users/pspitler/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -125,5 +126,5 @@ export PATH="$PATH:/Applications/OpenOffice.app/Contents/MacOS"
 export PATH="$HOME/.yarn/bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/Users/pspitler/Library/Python/2.7/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
