@@ -56,8 +56,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+#### WITH HOMEBREW
+####TMP OFF
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+#### WITHOUT HOMEBREW
+#export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+
 # export PATH="/Users/pspitler/Projects/railsnew/bin:$PATH"
+export PATH="/Users/pspitler/Library/Python/3.8/bin:$PATH"
 export EDITOR="code"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -93,15 +100,17 @@ if [ -f ~/.mcgrc ]; then source ~/.mcgrc ; fi
 export NODE_ENV="development"
 
 # NVM
+#export NVM_DIR="$HOME/.nvm"
+#  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+#  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### chruby
-#chruby ruby-2.3.1
 
 #export PATH="/Users/pspitler/Projects/bloc/Bloc/node_modules/.bin:$PATH"
 
@@ -128,3 +137,11 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/Users/pspitler/Library/Python/2.7/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
+### chruby
+chruby ruby-2.5.1
+
+#export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/local/opt/qt/plugins
+export QT_DEBUG_PLUGINS=1
+``

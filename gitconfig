@@ -32,3 +32,5 @@
 	smudge = git-media-smudge %f
 [push]
   default = tracking
+[pull]
+	rebase = false
